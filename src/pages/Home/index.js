@@ -4,11 +4,12 @@ import { useData } from '../../Context/context';
 import { Grid } from './style';
 
 function Home() {
-    const { props } = useData();
-    console.log(props)
+    const [props] = useData();
+    if(typeof props === 'undefined') return null;
     return (
         <Grid>
-            {props.map((props, index) => <Card src={props.src} alt={props.alt} title={props.title} descricao={props.descricao} />)}
+            {JSON.stringify(props)}
+            {/* {props.map((props, index) => <Card src={props.src} alt={props.alt} title={props.title} descricao={props.descricao} />)} */}
         </Grid>
     );
 }

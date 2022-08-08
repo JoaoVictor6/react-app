@@ -9,7 +9,7 @@ export const DataProvider = ({ children }) => {
   const [props, setProps] =     useState()  
   fetch("https://pokeapi.co/api/v2/pokemon/ditto")
   .then(T => T.json())
-  .then(data =>
+  .then(data =>()=>
     setProps(data)
   )  
 

@@ -1,19 +1,14 @@
+import Base from "./styles/elements/Base"
 import { StrictMode } from "react";
-import ReactDOM from "react-dom";
+import { createRoot } from "react-dom/client";
 
 import App from "./App";
-import { DataProvider } from "./Context/context";
-
-import Base from "./styles/elements/Base"
 
 const rootElement = document.getElementById("root");
+const root = createRoot(rootElement);
 
-ReactDOM.render(
+root.render(
   <StrictMode>
-    <DataProvider>
-      <Base/>
-      <App />
-    </DataProvider>
-  </StrictMode>,
-  rootElement
+    <App />
+  </StrictMode>
 );
