@@ -5,7 +5,7 @@ import { Grid } from './style';
 
 function Home() {
     const { props } = useData();
-
+    console.log(props)
     return (
         <Grid>
             {props.map((props, index) => <Card src={props.src} alt={props.alt} title={props.title} descricao={props.descricao} />)}

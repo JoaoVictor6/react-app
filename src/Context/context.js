@@ -1,12 +1,17 @@
 import React, { createContext, useContext, useState } from "react";
-import { data } from "../Api/services";
+// import { data } from "../Api/services";
 
 export const DataContext = createContext({
   props: {},
 })
 
 export const DataProvider = ({ children }) => {
-  const [props, setProps] = useState(data)   
+  const [props, setProps] =     useState()  
+  fetch("https://pokeapi.co/api/v2/pokemon/ditto")
+  .then(T => T.json())
+  .then(data =>
+    setProps(data)
+  )  
 
   return (
     <DataContext.Provider   
