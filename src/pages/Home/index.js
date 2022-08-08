@@ -1,20 +1,15 @@
 import React, { useState } from 'react';
-import  Card from "../../Components/Card";
+import Card from "../../Components/Card";
+import { useData } from '../../Context/context';
 import { Grid } from './style';
 
-import {data} from "../../Api/services";
-import Context from '../../Context/context';
+function Home() {
+    const { props } = useData();
 
-const datatemp = data
-
-function Home(data) {
-    const [props, setLists] = useState(data);
     return (
-        <Context.Provider value={{ props }}>
-            <Grid>
-            {data.map((props, index) => <Card src={props.src} alt={props.alt} title={props.title} descricao={props.descricao}/>)}
-            </Grid>
-      </Context.Provider>   
+        <Grid>
+            {props.map((props, index) => <Card src={props.src} alt={props.alt} title={props.title} descricao={props.descricao} />)}
+        </Grid>
     );
 }
 

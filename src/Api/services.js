@@ -1,26 +1,26 @@
 export const data =[
     {
-        "src": "../pages/Cases/Home.html",
+        "src": "/img/capacete-r8-pro-tork-fundo-preto-cores-connectparts--1.png",
         "alt": "owna",
-        "title": "Home",
-        "descricao": "Home Home Home Home Home Home Home",
+        "title": "Capacete",
+        "descricao": "Capacete Pro Tork R8 Fechado Fundo Preto com Viseira Fumê",
     },
     {
-        "src": "../pages/Cases/Home.html",
+        "src": "/img/capacete-r8-pro-tork-fundo-preto-cores-connectparts--1.png",
         "alt": "owna",
-        "title": "Home",
-        "descricao": "Home Home Home Home Home Home Home",
+        "title": "Capacete",
+        "descricao": "Capacete Pro Tork R8 Fechado Fundo Preto com Viseira Fumê",
     },
     {
-        "src": "../pages/Cases/Home.html",
+        "src": "/img/capacete-r8-pro-tork-fundo-preto-cores-connectparts--1.png",
         "alt": "owna",
-        "title": "Home",
-        "descricao": "Home Home Home Home Home Home Home",
+        "title": "Capacete",
+        "descricao": "Capacete Pro Tork R8 Fechado Fundo Preto com Viseira Fumê",
     },
     {
-        "src": "../pages/Cases/Home.html",
+        "src": "/img/capacete-r8-pro-tork-fundo-preto-cores-connectparts--1.png",
         "alt": "owna",
-        "title": "Home",
-        "descricao": "Home Home Home Home Home Home Home",
+        "title": "Capacete",
+        "descricao": "Capacete Pro Tork R8 Fechado Fundo Preto com Viseira Fumê",
     }
 ]
