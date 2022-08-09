@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useState } from "react";
+import React, { createContext, useContext, useState, useEffect } from "react";
 // import { data } from "../Api/services";
 
 export const DataContext = createContext({
@@ -6,12 +6,14 @@ export const DataContext = createContext({
 })
 
 export const DataProvider = ({ children }) => {
-  const [props, setProps] =     useState()  
-  fetch("https://pokeapi.co/api/v2/pokemon/ditto")
-  .then(T => T.json())
-  .then(data =>()=>
-    setProps(data)
-  )  
+  const [props, setProps] = useState()
+  useEffect(() => {
+    fetch("https://pokeapi.co/api/v2/pokemon/ditto")
+    .then(T => T.json())
+    .then(data =>
+      setProps(data)
+    )  
+  }, [])
 
   return (
     <DataContext.Provider   
