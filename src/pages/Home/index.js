@@ -4,7 +4,7 @@ import { useData } from '../../Context/context';
 import { Grid } from './style';
 
 function Home() {
-    const [props] = useData();
+    const {props} = useData();
     if(typeof props === 'undefined') return null;
     return (
         <Grid>
