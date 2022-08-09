@@ -1,9 +1,12 @@
- import Home from './pages/Home'
+ import { DataProvider } from './Context/context';
+import Home from './pages/Home'
 
 function App() {
   return (
     <div className="App">
-      <Home/>
+      <DataProvider>
+        <Home/>
+      </DataProvider>
     </div>
   );
 }
